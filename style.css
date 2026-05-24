@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    background:white;
+    width:400px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.balance-container{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.balance-container h2{
+    margin-top:10px;
+    color:#333;
+}
+
+.summary{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.income-box,
+.expense-box{
+    width:48%;
+    background:#fafafa;
+    padding:15px;
+    border-radius:8px;
+    text-align:center;
+}
+
+.income-box{
+    border:2px solid green;
+}
+
+.expense-box{
+    border:2px solid red;
+}
+
+#income{
+    color:green;
+    margin-top:10px;
+}
+
+#expense{
+    color:red;
+    margin-top:10px;
+}
+
+.form-container{
+    margin-bottom:20px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+form input{
+    margin-bottom:10px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form button{
+    padding:10px;
+    border:none;
+    background:#333;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#555;
+}
+
+.history ul{
+    list-style:none;
+}
+
+.history li{
+    background:#fafafa;
+    margin-bottom:10px;
+    padding:10px;
+    border-right:5px solid;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.plus{
+    border-color:green;
+}
+
+.minus{
+    border-color:red;
+}
+
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:5px 8px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+@media(max-width:500px){
+
+    .container{
+        width:95%;
+    }
+
+    .summary{
+        flex-direction:column;
+    }
+
+    .income-box,
+    .expense-box{
+        width:100%;
+        margin-bottom:10px;
+    }
+}
